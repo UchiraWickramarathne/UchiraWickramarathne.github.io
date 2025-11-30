@@ -1,0 +1,292 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #000000;
+    color: #ffffff;
+}
+
+section {
+    padding: 80px 10%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease-in-out;
+}
+
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    /* font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    border-left: 5px solid #ffffff;
+    padding-left: 15px;
+    letter-spacing: 1px; */
+
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-align: left;
+    border: none;
+    padding: 0;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.nav-links li a:hover {
+    color: #00ffe7;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 100px;
+    padding-bottom: 10px;   /* reduce extra bottom spacing */
+    margin-bottom: -130px;   /* pull next section upward */
+
+}
+
+.hero-left img {
+    width: 420px;
+    height: 620px;
+    margin-top: -120px;
+    /* object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px #ffffff20); */
+}
+
+.hero-right h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-right h2 {
+    font-size: 24px;
+    margin: 0 0 15px;
+    color: #c9fff9;
+}
+
+.hero-right p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 28px;
+    margin-right: 18px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffe7;
+    transform: scale(1.2);
+}
+
+/* ================= ABOUT ================= */
+
+#about{
+   padding-top: 40px; 
+}
+
+#about h2{
+    text-align: center;
+    border: none;
+    padding-left: 0;
+}
+#about p{
+     max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+.about-text {
+    max-width: 750px;
+}
+
+/* ================= TWO-COLUMN SECTIONS ================= */
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(57px, 1fr));
+    gap: 10px;
+    margin-top: 1px;
+    margin-left: 200px;
+}
+
+.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+.styled-list li {
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 24px;
+    font-size: 18px;
+}
+
+.styled-list li::before {
+    content: "▹";
+    color: #00ffe7;
+    position: absolute;
+    left: 0;
+}
+
+/* ================= SKILLS GRID ================= */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.skill-item img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.skill-item img:hover {
+    transform: scale(1.15);
+}
+
+.skill-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#skills h2{
+    text-align: center;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #00ffe7;
+    margin-bottom: 20px;
+}
+
+/* ================= PROJECTS ================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.project-box {
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #ffffff;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.12);
+}
+
+.project-img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-left img {
+        width: auto;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+}
+
+/* ================= Interet and Education ================= */
+#interests,
+#education {
+    scroll-margin-top: 120px; /* adjust if navbar height changes */
+}
+
+/* ================= publications ================= */
+#publications p {
+    margin-bottom: 25px;   /* increase this value if you want more space */
+}
+
+/* ================= research ================= */
+#research p {
+    margin-bottom: 25px;   /* increase this value if you want more space */
+}
