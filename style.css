@@ -290,3 +290,63 @@ header {
 #research p {
     margin-bottom: 25px;   /* increase this value if you want more space */
 }
+
+
+/* ================= ACHIEVEMENTS ================= */
+#achievements h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto 25px;
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.achievement-icon {
+    font-size: 38px;
+    color: #00ffe7;
+    padding-top: 5px;
+}
+
+.achievement-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.achievement-content h4 {
+    color: #c9fff9;
+    margin: 0 0 15px;
+}
+
+.achievement-content p {
+    font-size: 16px;
+}
+
+.achievement-date {
+    color: #bdbdbd;
+    font-size: 14px !important;
+}
+
+@media (max-width: 600px) {
+    .achievement-card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .achievement-content h3 {
+        font-size: 20px;
+    }
+}
+
