@@ -296,10 +296,12 @@ header {
 #achievements {
     padding: 80px 10%;
     scroll-margin-top: 120px;
+    box-sizing: border-box;
 }
 
 #achievements h2 {
     font-size: 36px;
+    font-weight: 600;
     margin-bottom: 25px;
     text-align: left;
     border: none;
@@ -307,9 +309,14 @@ header {
 }
 
 #achievements .card {
-    width: auto;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 20px 0;
+    padding: 25px;
     box-sizing: border-box;
+    border-radius: 12px;
+    border-left: 4px solid #00ffe7;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 #achievements h3 {
@@ -321,6 +328,12 @@ header {
     margin-top: 0;
     margin-bottom: 15px;
     color: #c9fff9;
+}
+
+#achievements p {
+    line-height: 1.7;
+    font-size: 17px;
+    margin-bottom: 0;
 }
 
 #achievements p {
